@@ -33,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playBtn(View v) {
+        String str = editTxt.getText().toString();
         Intent i = new Intent(this, SecondActivity.class);
-        i.putExtra("nome", editTxt.getText());
+        i.putExtra("stringa", str);
         startActivity(i);
     }
 
